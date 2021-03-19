@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="554.0" prefWidth="637.0" stylesheets="@MainStyle.css" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View.HelpViewController">
+   <children>
+      <GridPane gridLinesVisible="true" layoutX="2.0" layoutY="101.0" prefHeight="234.0" prefWidth="227.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="114.0" minWidth="10.0" prefWidth="114.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="119.0" minWidth="10.0" prefWidth="113.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <ImageView fx:id="PlayerImage" fitHeight="61.0" fitWidth="126.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../Resources/Images/sonic.png" />
+               </image></ImageView>
+            <ImageView fx:id="GoalImage" fitHeight="61.0" fitWidth="126.0" layoutX="10.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="1">
+               <image>
+                  <Image url="@../../Resources/Images/Goal.jpeg" />
+               </image></ImageView>
+            <ImageView fx:id="WallImage" fitHeight="61.0" fitWidth="126.0" layoutX="10.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="2">
+               <image>
+                  <Image url="@../../Resources/Images/wall1.jpg" />
+               </image></ImageView>
+            <ImageView fx:id="PathImage" fitHeight="61.0" fitWidth="126.0" layoutX="10.0" layoutY="118.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="3">
+               <image>
+                  <Image url="@../../Resources/Images/dolar.jpg" />
+               </image></ImageView>
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="43.0" prefWidth="124.0" text="Player image" GridPane.columnIndex="1" />
+            <Label alignment="CENTER" layoutX="141.0" layoutY="18.0" prefHeight="43.0" prefWidth="124.0" text="Goal image" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Label alignment="CENTER" layoutX="141.0" layoutY="77.0" prefHeight="43.0" prefWidth="124.0" text="Wall image" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Label alignment="CENTER" layoutX="141.0" layoutY="77.0" prefHeight="43.0" prefWidth="124.0" text="Path image" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+         </children>
+      </GridPane>
+      <Label layoutX="228.0" layoutY="21.0" prefHeight="43.0" prefWidth="145.0" text="About information">
+         <font>
+            <Font name="System Bold Italic" size="16.0" />
+         </font>
+      </Label>
+      <Label alignment="TOP_LEFT" layoutX="-1.0" layoutY="370.0" prefHeight="82.0" prefWidth="435.0" text="Game Rules:&#10;1. The player starts in the start position.&#10;2. The goal of the game is to get the player to the goal point.&#10;3. The player cannot pass through walls.&#10;">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Label>
+      <ImageView fx:id="NumImage" fitHeight="167.0" fitWidth="172.0" layoutX="344.0" layoutY="176.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../Resources/Images/numpad.jpg" />
+         </image></ImageView>
+      <Label layoutX="395.0" layoutY="343.0" prefHeight="27.0" prefWidth="43.0" text="Down">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Label layoutX="279.0" layoutY="249.0" prefHeight="17.0" prefWidth="43.0" text="Left">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Label layoutX="395.0" layoutY="139.0" prefHeight="27.0" prefWidth="61.0" text="UP">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Label layoutX="490.0" layoutY="249.0" prefHeight="17.0" prefWidth="43.0" text="Right">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Label layoutX="234.0" layoutY="205.0" prefHeight="27.0" prefWidth="133.0" text="Left Up Diagonal">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Label layoutX="498.0" layoutY="210.0" prefHeight="17.0" prefWidth="113.0" text="Right Up Diagonal">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Label layoutX="234.0" layoutY="283.0" prefHeight="17.0" prefWidth="117.0" text="Left Down Diagonal">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Label layoutX="491.0" layoutY="283.0" text="Right Down Diagonal">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Line endX="401.5" endY="209.2928924560547" fill="BLACK" startX="401.5" startY="166.0" />
+      <Line endX="357.18359375" endY="223.2928924560547" startX="330.0" startY="216.0" />
+      <Line endX="356.18359375" endY="258.29290771484375" startX="310.29290771484375" startY="258.29290771484375" />
+      <Line endX="344.0" endY="291.5" startX="368.29290771484375" startY="291.5" />
+      <Line endX="406.5" endY="355.5" startX="398.29290771484375" startY="294.29290771484375" />
+      <Line endX="438.18359375" endY="291.5" startX="491.0" startY="291.5" />
+      <Line endX="490.0" endY="259.0" startX="440.29290771484375" startY="259.0" />
+      <Line endX="498.0" endY="218.5" startX="439.29290771484375" startY="227.2928924560547" />
+      <Label layoutX="63.0" layoutY="64.0" prefHeight="27.0" prefWidth="108.0" text="Explain Icons">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="420.0" layoutY="136.0" prefHeight="34.0" prefWidth="227.0" text="Dont Forget Do Open the NumLock!!" textFill="RED">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Button fx:id="Close" layoutX="239.0" layoutY="480.0" mnemonicParsing="false" onAction="#closeWindow" prefHeight="34.0" prefWidth="108.0" text="Close" />
+   </children>
+</Pane>
